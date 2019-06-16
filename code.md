@@ -26,6 +26,10 @@ Introduction
 
 <img src= "https://user-images.githubusercontent.com/37058246/59562009-fb120380-9061-11e9-99e4-e1f1c643d82c.png" width=60%
 height=60%>
+
+이 새롭게 
+
+
 2. 라즈베리 파이를 통해 실시간 미세먼지 농도 측정한 값을 HUE 와 연동하는 법 설명서
 ------------------------------------------
 
