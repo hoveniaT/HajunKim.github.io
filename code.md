@@ -50,9 +50,19 @@ light_num1 = 8
 light_num2= 9
 
 ```
-파이썬과 
+파이썬과 hue를 연동하기 위하여서는 총 ip, username, light number가 필요하다. 
 
-<iframe width="948" height="533" src="https://www.youtube.com/watch?v=TL-K4Gm0fis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ip를 받아오는 과정은 단순 공유기의 ip를 받아오는 것이 아니다. 
+hue 어플 내에서 따로 생성된 ip를 받아와야한다. 
+
+어플 내 하단 바의 설정 > Hue bridge 선택 하여 확인할 수 있다. 
+아래의 사진을 참고하면 된다. 
+<img src= "https://user-images.githubusercontent.com/37058246/59563760-19372e00-9079-11e9-86fa-d38012f03e18.jpeg" width=60% height=60%>
+
+<img src= "https://user-images.githubusercontent.com/37058246/59563750-01f84080-9079-11e9-8aca-92c2d8bea8de.jpeg" width=60% height=60%>
+
+username 을 
+
 
 
 2. 미세먼지 공공 데이터를 HUE 로 가져오는 방법 설명서
