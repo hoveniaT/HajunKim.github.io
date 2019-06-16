@@ -34,10 +34,12 @@ height=60%>
 
 이 새롭게 업데이트 된 한 줄을 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드"에 업로드 한다.  
 
-'''python3
+'''python3  
+
 import urllib.request 
 
 url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8zy7UI5D1Y-cvo5-19HVyOSapGmDa4S8Vt0H1v_tMPT2ZcQrfEubkQR8bGJkwMJHbECFqNMSyGvpn/pub?gid=1192547099&single=true&output=csv'   
+
 file_name = 'Hajun.csv'
 
 urllib.request.urlretrieve(url, file_name)
