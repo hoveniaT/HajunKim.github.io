@@ -10,8 +10,7 @@ Introduction
 이 설명서는 미세먼지 공공데이터를 google sheet로 받아오는 법을 먼저 숙지해야 한다. 마찬가지로 라즈베리 파이를 통해 실기간 미세먼지 농도를 측정하는 방법도 먼저 숙지해야 한다. 불빛을 통해 미세먼지 데이터를 사람들에게 시각적으로 전달하기 위하여 시도한 방법이다.   
 어려운 점, 혹은 오류가 있을 경우에는  ha_jun-_-v@hanmail.net으로 메일을 공손히 보내주길 
 
-![hue](https://user-images.githubusercontent.com/37058246/59561648-ab313d80-905d-11e9-8718-1b6ee2c25bbd.jpg){: width="100%" height="100%"}
-
+<img src="https://user-images.githubusercontent.com/37058246/59561648-ab313d80-905d-11e9-8718-1b6ee2c25bbd.jpg" width="300" height="300">
 
 ##1. 미세먼지 공공 데이터를 HUE 로 가져오는 방법 설명서
 ---------------------------------------
