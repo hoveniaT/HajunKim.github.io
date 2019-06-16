@@ -19,6 +19,15 @@ Introduction
 
 이 과정이 있어야 HUE가 연동이 되어, 데이터를 받아올 수 있으므로 필수로 참고해야 한다. 
 
+연동 전 setting 
+1. 근처 wifi 위치를 확인한다. 
+2. wifi에 아래의 사진과 같은 philps bridge를 연결한다. (philips hue 전구 박스를 확인하면 있다.)
+
+<img src= "https://user-images.githubusercontent.com/37058246/59563613-26531d80-9077-11e9-95f0-3aab7080d782.jpg" width= 60% height=60%>
+
+연동 하는 과정 
+1. 플레이 스토어, app store에서 philips hue를 다운 받는다. 
+2. 
 
 
 
