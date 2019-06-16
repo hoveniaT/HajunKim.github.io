@@ -19,17 +19,40 @@ Introduction
 
 이 과정이 있어야 HUE가 연동이 되어, 데이터를 받아올 수 있으므로 필수로 참고해야 한다. 
 
-연동 전 setting 
+python 코드와 HUE를 연동하기 위해서는 2가지의 과정이 필요하다. 
+
+1. 인터넷과 HUE 연동하여 어플로 조작 가능하도록 하기 
+
+2. Username 과 Hue 전구의 번호를 받아와 python과 연동하기 
+
+아래 영상은 연동 전 setting에 관한 유튜브 영상이다. 
+영상을 참고하면 충분히 파이썬 코드와 연동에 필요한 과정들을 수행 가능하다. 
+
+<iframe width="948" height="533" src="https://www.youtube.com/watch?v=TL-K4Gm0fis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+인터넷과 HUE 연동하여 어플로 조작 가능하도록 하기 
 1. 근처 wifi 위치를 확인한다. 
 2. wifi에 아래의 사진과 같은 philps bridge를 연결한다. (philips hue 전구 박스를 확인하면 있다.)
-
 <img src= "https://user-images.githubusercontent.com/37058246/59563613-26531d80-9077-11e9-95f0-3aab7080d782.jpg" width= 60% height=60%>
+3. 플레이 스토어, app store에서 philips hue를 다운 받는다. 
+4. 어플의 화면을 켜 연동을 확인한다. 
+5. bridge 본체의 버튼을 누르라는 안내문이 어플에 나타나면 동그란 버튼을 눌러준다. 
+6. 전구를 HUE에 등록한다. 
 
-연동 하는 과정 
-1. 플레이 스토어, app store에서 philips hue를 다운 받는다. 
-2. 
+위 과정은 동영상을 첨부하였다. 참고하면 정확하게 어떻게 수행되는지 확인 가능하다. 
 
 
+Username 과 Hue 전구의 번호를 받아와 python과 연동하기 
+```python3
+b = Bridge("192.168.0.9", "fwVQGMv9TZ0bx1lXms6TVrgKs9-6YEGze3kEn42g")
+lights = b.lights
+light_num1 = 8
+light_num2= 9
+
+```
+파이썬과 
+
+<iframe width="948" height="533" src="https://www.youtube.com/watch?v=TL-K4Gm0fis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 2. 미세먼지 공공 데이터를 HUE 로 가져오는 방법 설명서
