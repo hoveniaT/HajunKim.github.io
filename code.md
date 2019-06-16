@@ -33,7 +33,7 @@ Introduction
 height=60%>
 
 이 새롭게 업데이트 된 한 줄을 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드"에 업로드 한다. 
-
+'''
 import urllib.request 
 
 url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8zy7UI5D1Y-cvo5-19HVyOSapGmDa4S8Vt0H1v_tMPT2ZcQrfEubkQR8bGJkwMJHbECFqNMSyGvpn/pub?gid=1192547099&single=true&output=csv'
@@ -50,6 +50,50 @@ tmp1,tmp2,tmp3,tmp4,dust10,tmp5,tmp6,tmp7,tmp8 = lineList[2].split(",")
 print("dust10", dust10)
  
 dust10 = int(dust10)
+
+'''
+
+업로드 된 코드에 대하여 설명하겠다. 
+
+urllib library에 대한 설명은 https://blog.naver.com/is_king/221461183877 을 참고하라. 
+구동자체와는 큰 관계가 없으니 이해를 생략해도 상관없다. 
+
+친절하게 설명을 하자면 
+
+url = '주소값' 은 google sheet에서 본인의 주소값을 작성하면 된다. 단순한 변수이다. 이어지는 코드에서 url 변수는 모두 이 변수선언에 해당된 주소값이다. 
+
+file_name = 파일이름 은 설정하고자 하는 본인의 파일 이름이다. 마찬가지로 단순한 변수이다.
+
+urllib.request.urlretrieve(url, file_name), 즉 urlretrieve 함수는 
+설정한 url 주소(선언된 변수)에서 파일명대로 파일을 다운로드(ex.웹상 jpg 파일 다운로드 등)하는 것이다. 
+해당에서는 파일 이름의 확장자명이 csv이므로 csv로 다운로드한다.
+
+csvfile 변수에 'r', 즉 read 모드로 연 파일을 저장한다. 
+
+그 후 linelist에 read 모드로 받아온 파일의 정보를 line 별로 나눠서(splitlines) 리스트화한다. 
+
+위의 경우에는 linelist에 [[latest data],[Y,N,D,H,미세먼지10,온도,습도,강수량,풍향], [2019,6,16,17,3,19.4,77,0,41]] 로 저장되어있다. 
+
+이 중 lineList[2].split(",") 즉 3번째 줄의 데이터를 , 를 기준으로 나눠서 선언된 tmp1, tmp2, tmp3, tmp4, dust10, tmp5, tmp6, tmp7, tmp8 에 저장한다. 
+
+이 중, 미세먼지 데이터는 5번째로 '3' 이 dust10 에 저장되었다. 저장된 정보는 string 이다. 
+
+따라서 숫자로 변환하여 주기 위하여 int(dust10)을 하여 인트형으로 변환한다. 
+
+그 후, 
+'''
+if dust10 < 1:
+   b.lights(light_num1, 'state', bri=255, hue=45000, sat=255) #blue
+   b.lights(light_num2, 'state', bri=255, hue=45000, sat=255) #blue
+'''
+
+"준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드" 의 변수 대입 정보를 변경하여 반영시킨다. 
+
+
+
+
+
+
 
 
 2. 라즈베리 파이를 통해 실시간 미세먼지 농도 측정한 값을 HUE 와 연동하는 법 설명서
