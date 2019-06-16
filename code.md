@@ -9,6 +9,10 @@ Introduction
 이 설명서는 미세먼지 공공데이터를 google sheet로 받아오는 법을 먼저 숙지해야 한다. 마찬가지로 라즈베리 파이를 통해 실기간 미세먼지 농도를 측정하는 방법도 먼저 숙지해야 한다. 불빛을 통해 미세먼지 데이터를 사람들에게 시각적으로 전달하기 위하여 시도한 방법이다.   
 어려운 점, 혹은 오류가 있을 경우에는  ha_jun-_-v@hanmail.net으로 메일을 공손히 보내주길 
 
+just in case 
+모든 코드는 cmd (terminal)창에서 진행된다. 
+파일이 설치된 위치에 들어가서 python3 파일이름 하면 cmd에서 파이썬을 실행 가능한 것은 안다고 가정한다. 
+
 <img src="https://user-images.githubusercontent.com/37058246/59561648-ab313d80-905d-11e9-8718-1b6ee2c25bbd.jpg" width=60% height=60%>
 
 1. 라즈베리 파이를 통해 실시간 미세먼지 농도 측정한 값을 HUE 와 연동하는 법 설명서
@@ -57,11 +61,25 @@ hue 어플 내에서 따로 생성된 ip를 받아와야한다.
 
 어플 내 하단 바의 설정 > Hue bridge 선택 하여 확인할 수 있다. 
 아래의 사진을 참고하면 된다. 
-<img src= "https://user-images.githubusercontent.com/37058246/59563760-19372e00-9079-11e9-86fa-d38012f03e18.jpeg" width=60% height=60%>
+<img src= "https://user-images.githubusercontent.com/37058246/59563760-19372e00-9079-11e9-86fa-d38012f03e18.jpeg" width=30% height=30%>
 
-<img src= "https://user-images.githubusercontent.com/37058246/59563750-01f84080-9079-11e9-8aca-92c2d8bea8de.jpeg" width=60% height=60%>
+<img src= "https://user-images.githubusercontent.com/37058246/59563750-01f84080-9079-11e9-8aca-92c2d8bea8de.jpeg" width=30% height=30%>
 
-username 을 
+username 을 받아오는 과정은 단순하다. 
+
+```python3
+from qhue import create_new_username
+username = create_new_username("192.168.0.8")
+print(username)
+
+```
+아래 코드를 수행하면 username 이 자동으로 프린트 된다. 프린트 된 유저네임을 복사하여 파이썬 코드의 username 위치에 작성하여주면 된다. 
+
+3. light number 받아오는 법 
+light number을 받아오는 법은 생각보다 까다롭다. 
+어떠한 page에 들어가서 그곳에서 사용하는 문법으로 확인해봐야하는데 어렵지는 않지만, 
+이렇게까지 할 필요없이 0(혹은1)~ 10 까지의 숫자를 넣어서 시도해보면 어렵지 않게 찾을 수 있을것이고
+대부분 처음 생성하는 light number은 1로, 그 후 추가되는 것은 숫자가 1 씩 증가할 것이다. 
 
 
 
@@ -143,8 +161,6 @@ if dust10 < 1:
 
 
 <img src ="https://user-images.githubusercontent.com/37058246/59562314-1b43c180-9066-11e9-8193-7b9e5ab346ad.png" width=60% height=60%>
-
-
 
 
 
