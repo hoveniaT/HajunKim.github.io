@@ -32,7 +32,8 @@ Introduction
 <img src= "https://user-images.githubusercontent.com/37058246/59562009-fb120380-9061-11e9-99e4-e1f1c643d82c.png" width=60%
 height=60%>
 
-이 새롭게 업데이트 된 한 줄을 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드"에 업로드 한다.  
+이 새롭게 업데이트 된 한 줄을 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드"에 업로드 한다.
+
 
 '''python
 
@@ -54,7 +55,7 @@ print("dust10", dust10)
  
 dust10 = int(dust10)
 
-'''
+```python3
 
 업로드 된 코드에 대하여 설명하겠다. 
 
@@ -84,11 +85,11 @@ csvfile 변수에 'r', 즉 read 모드로 연 파일을 저장한다.
 따라서 숫자로 변환하여 주기 위하여 int(dust10)을 하여 인트형으로 변환한다. 
 
 그 후, 
-'''
+
 if dust10 < 1:
    b.lights(light_num1, 'state', bri=255, hue=45000, sat=255) #blue
    b.lights(light_num2, 'state', bri=255, hue=45000, sat=255) #blue
-'''
+```
 
 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드" 의 변수 대입 정보를 변경하여 반영시킨다. 
 
