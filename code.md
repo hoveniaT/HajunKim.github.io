@@ -32,7 +32,8 @@ Introduction
 <img src= "https://user-images.githubusercontent.com/37058246/59562009-fb120380-9061-11e9-99e4-e1f1c643d82c.png" width=60%
 height=60%>
 
-이 새롭게 업데이트 된 한 줄을 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드"에 업로드 한다. 
+이 새롭게 업데이트 된 한 줄을 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드"에 업로드 한다.  
+
 '''python3
 import urllib.request 
 
