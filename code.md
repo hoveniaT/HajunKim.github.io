@@ -64,25 +64,22 @@ urllib library에 대한 설명은 https://blog.naver.com/is_king/221461183877 �
 
 친절하게 설명을 하자면 
 
-url = '주소값' 은 google sheet에서 본인의 주소값을 작성하면 된다. 단순한 변수이다. 이어지는 코드에서 url 변수는 모두 이 변수선언에 해당된 주소값이다. 
+1. url = '주소값' 은 google sheet에서 본인의 주소값을 작성하면 된다. 단순한 변수이다. 이어지는 코드에서 url 변수는 모두 이 변수선언에 해당된 주소값이다. 
 
-file_name = 파일이름 은 설정하고자 하는 본인의 파일 이름이다. 마찬가지로 단순한 변수이다.
+2. file_name = 파일이름 은 설정하고자 하는 본인의 파일 이름이다. 마찬가지로 단순한 변수이다.
 
-urllib.request.urlretrieve(url, file_name), 즉 urlretrieve 함수는 
-설정한 url 주소(선언된 변수)에서 파일명대로 파일을 다운로드(ex.웹상 jpg 파일 다운로드 등)하는 것이다. 
-해당에서는 파일 이름의 확장자명이 csv이므로 csv로 다운로드한다.
+3. urllib.request.urlretrieve(url, file_name), 즉 urlretrieve 함수는 설정한 url 주소(선언된 변수)에서 파일명대로 파일을 다운로드(ex.웹상 jpg 파일 다운로드 등)하는 것이다. 해당에서는 파일 이름의 확장자명이 csv이므로 csv로 다운로드한다.
 
-csvfile 변수에 'r', 즉 read 모드로 연 파일을 저장한다. 
+4. csvfile 변수에 'r', 즉 read 모드로 연 파일을 저장한다. 
 
-그 후 linelist에 read 모드로 받아온 파일의 정보를 line 별로 나눠서(splitlines) 리스트화한다. 
-
+5. 그 후 linelist에 read 모드로 받아온 파일의 정보를 line 별로 나눠서(splitlines) 리스트화한다. 
 위의 경우에는 linelist에 [[latest data],[Y,N,D,H,미세먼지10,온도,습도,강수량,풍향], [2019,6,16,17,3,19.4,77,0,41]] 로 저장되어있다. 
 
-이 중 lineList[2].split(",") 즉 3번째 줄의 데이터를 , 를 기준으로 나눠서 선언된 tmp1, tmp2, tmp3, tmp4, dust10, tmp5, tmp6, tmp7, tmp8 에 저장한다. 
+6. 이 중 lineList[2].split(",") 즉 3번째 줄의 데이터를 , 를 기준으로 나눠서 선언된 tmp1, tmp2, tmp3, tmp4, dust10, tmp5, tmp6, tmp7, tmp8 에 저장한다. 
 
 이 중, 미세먼지 데이터는 5번째로 '3' 이 dust10 에 저장되었다. 저장된 정보는 string 이다. 
 
-따라서 숫자로 변환하여 주기 위하여 int(dust10)을 하여 인트형으로 변환한다. 
+9. 따라서 숫자로 변환하여 주기 위하여 int(dust10)을 하여 인트형으로 변환한다. 
 
 그 후, 
 ```python3
