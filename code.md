@@ -90,6 +90,7 @@ if dust10 < 1:
 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드" 의 변수 대입 정보를 변경하여 반영시킨다. 
 
 
+<img src = "https://github.com/HajunKim/HajunKim.github.io/issues/3" width=60% height=60%>
 
 
 
