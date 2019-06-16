@@ -20,6 +20,8 @@ Introduction
 
 아래사진과 같이 Sheet1에 미세먼지 데이터를 업데이트 했다고 가정해보자. 
 
+https://user-images.githubusercontent.com/37058246/59561975-54c5fe00-9061-11e9-8986-2e55a793f696.png
+
 
 
 2. 라즈베리 파이를 통해 실시간 미세먼지 농도 측정한 값을 HUE 와 연동하는 법 설명서
