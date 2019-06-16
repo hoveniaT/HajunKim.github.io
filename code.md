@@ -37,7 +37,7 @@ height=60%>
 '''python3
 import urllib.request 
 
-url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8zy7UI5D1Y-cvo5-19HVyOSapGmDa4S8Vt0H1v_tMPT2ZcQrfEubkQR8bGJkwMJHbECFqNMSyGvpn/pub?gid=1192547099&single=true&output=csv'
+url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8zy7UI5D1Y-cvo5-19HVyOSapGmDa4S8Vt0H1v_tMPT2ZcQrfEubkQR8bGJkwMJHbECFqNMSyGvpn/pub?gid=1192547099&single=true&output=csv'   
 file_name = 'Hajun.csv'
 
 urllib.request.urlretrieve(url, file_name)
