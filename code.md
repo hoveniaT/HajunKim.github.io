@@ -35,7 +35,7 @@ height=60%>
 이 새롭게 업데이트 된 한 줄을 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드"에 업로드 한다.
 
 
-'''python
+```python3
 
 import urllib.request 
 
@@ -55,7 +55,7 @@ print("dust10", dust10)
  
 dust10 = int(dust10)
 
-```python3
+```
 
 업로드 된 코드에 대하여 설명하겠다. 
 
@@ -89,7 +89,6 @@ csvfile 변수에 'r', 즉 read 모드로 연 파일을 저장한다.
 if dust10 < 1:
    b.lights(light_num1, 'state', bri=255, hue=45000, sat=255) #blue
    b.lights(light_num2, 'state', bri=255, hue=45000, sat=255) #blue
-```
 
 "준비된 숫자 수치에 따라 빛의 밝기가 변하는 hue 코드" 의 변수 대입 정보를 변경하여 반영시킨다. 
 
